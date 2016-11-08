@@ -1,5 +1,5 @@
 .icon {
-    color: #1c4382;
+    color: rgba(1, 7, 10, 0.46);
     font-size: 150px;
 }
 
@@ -27,6 +27,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 .navbar li a, .navbar .navbar-brand {
     color: #fff !important;
 }
@@ -42,7 +43,7 @@ body {
 }
 
 .btn-info {
-    background-color: #1c4382;
+    background-color: rgba(1, 7, 10, 0.46);
 }
 
 #logo {
@@ -54,7 +55,7 @@ body {
 }
 
 .panel {
-    border: 1px solid blue;
+    border: 1px solid rgba(1, 7, 10, 0.46);
     border-radius: 0 !important;
     transition: box-shadow 0.5s;
 }
@@ -64,14 +65,13 @@ body {
 }
 
 .panel-footer .btn:hover {
-    border: 1px solid lightblue;
-    background-color: #fff !important;
-    color: blue;
+    background-color: rgba(1, 7, 10, 0.46) !important;
+    color: rgb(255, 255, 255);
 }
 
 .panel-heading {
-    color: #1c4382 !important;
-    background-color: lightblue !important;
+    color: rgba(1, 7, 10, 0.46) !important;
+    background-color: #ff8a1b !important;
     padding: 25px;
     border-bottom: 1px solid transparent;
     border-top-left-radius: 0px;
@@ -95,7 +95,7 @@ body {
 
 .panel-footer .btn {
     margin: 15px 0;
-    background-color: #1c4382;
+    background-color: #ff8a1b;
     color: #fff;
 }
 
