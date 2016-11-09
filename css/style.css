@@ -137,3 +137,12 @@ body {
     width: 250px;
     height: 250px;
 }
+/*.btn:hover{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}*/
+#liders .panel-heading{
+  text-align: center !important;
+  font-size: 18px !important;
+}
