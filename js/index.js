@@ -38,48 +38,52 @@ $(document).ready(function () {
     document.getElementById("datum").innerHTML = datum.toDateString();
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    $(".onclick").click(function() {
+    $(".onclick").click(function () {
         $("#contactdiv").css("display", "inline-block");
+        $(".navbar").css("z-index", "-1");
     });
-    $("#contact-form #cancel-img").click(function() {
+    $("#contact-form #cancel-img").click(function () {
+        $(".navbar").css("z-index", "9999");
         $(this).parent().parent().hide();
     });
-    $("#contact-form #cancel").click(function() {
+    $("#contact-form #cancel").click(function () {
+        $(".navbar").css("z-index", "9999");
         $(this).parent().parent().hide();
     });
 // Contact form popup send-button click event.
-    $("#send").click(function() {
+    $("#send").click(function () {
         var name = $("#name-field").val();
         var email = $("#email-field").val();
         var contact = $("#contactno").val();
         var message = $("#message").val();
-        if (name == "" || email == "" || contactno == "" || message == ""){
-            alert("Please Fill All Fields");//TODO
-        }else{
+        if (name == "" || email == "" || contactno == "" || message == "") {
+            alert("Please fill in all fields");//TODO
+        } else {
             if (validateEmail(email)) {
+                $(".navbar").css("z-index", "9999");
                 $("#contactdiv").css("display", "none");
-            }else {
+            } else {
                 $("#email-field").css("border-color", "red");
             }
             function validateEmail(email) {
                 var filter = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
                 if (filter.test(email)) {
                     return true;
-                }else {
+                } else {
                     return false;
                 }
             }
         }
     });
 // Login form popup login-button click event.
-    $("#loginbtn").click(function() {
+    $("#loginbtn").click(function () {
         var name = $("#username").val();
         var password = $("#password").val();
-        if (username == "" || password == ""){
+        if (username == "" || password == "") {
             alert("Username or Password was Wrong");
-        }else{
+        } else {
             $("#logindiv").css("display", "none");
         }
     });
