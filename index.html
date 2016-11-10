@@ -240,7 +240,7 @@
                 <div class="panel-footer">
                     <h3>$19</h3>
                     <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
+                    <button class="btn btn-lg onclick">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -259,7 +259,7 @@
                 <div class="panel-footer">
                     <h3>$29</h3>
                     <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
+                    <button class="btn btn-lg onclick">Sign Up</button>
                 </div>
             </div>
         </div>
@@ -278,24 +278,53 @@
                 <div class="panel-footer">
                     <h3>$49</h3>
                     <h4>per month</h4>
-                    <button class="btn btn-lg">Sign Up</button>
+                    <button class="btn btn-lg onclick">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<div id="contactdiv">
+    <form class="form" action="#" id="contact-form">
+        <span class="glyphicon glyphicon-remove" id="cancel-img"></span>
+        <p id="datum" class="datum"></p>
+        <h3>Sign Up Form</h3>
+        <hr>
+        <label>Name: <span>*</span></label>
+        <br/>
+        <input type="text" id="name-field" placeholder="Name"/><br/>
+        <br/>
+        <label>Email: <span>*</span></label>
+        <br/>
+        <input type="text" id="email-field" placeholder="Email"/><br/>
+        <br/>
+        <label>Contact No: <span>*</span></label>
+        <br/>
+        <input type="text" id="contactno" placeholder="10 digit Mobile no."/><br/>
+        <br/>
+        <label>Message:</label>
+        <br/>
+        <textarea id="message" placeholder="Message......."></textarea><br/>
+        <br/>
+        <input type="button" class = "btn btn-lg" id="send" value="Send"/>
+        <input type="button" class = "btn btn-lg" id="cancel" value="Cancel"/>
+        <br/>
+    </form>
+</div>
+
 <hr>
 <div id="contact" class="container-fluid bg-grey" style="padding-top: 40px;">
     <h2 class="text-center">CONTACT</h2>
     <div class="row">
         <div class="col-sm-5">
 
-            <p><span class="glyphicon glyphicon-map-marker"></span> New Yourk, US</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> New Yourk Seljacino, US</p>
             <p><span class="glyphicon glyphicon-phone"></span> +00 101101010</p>
             <p><span class="glyphicon glyphicon-envelope"></span> email@something.com</p>
         </div>
-        <div class="col-sm-7 slideanim text-center">
-            <div class="row ">
+        <div class="col-sm-7 slideanim text-center" id="contact-mail">
+            <div class="row" >
                 <div class="col-sm-6 form-group">
                     <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
                 </div>
